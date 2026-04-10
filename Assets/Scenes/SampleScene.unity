@@ -252,7 +252,6 @@ GameObject:
   - component: {fileID: 397480278}
   - component: {fileID: 397480277}
   - component: {fileID: 397480276}
-  - component: {fileID: 397480275}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -260,19 +259,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &397480275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397480274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b54d56e88971954aab6cd8e67b4fe22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 0.5
 --- !u!65 &397480276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -624,6 +610,7 @@ GameObject:
   - component: {fileID: 2007437013}
   - component: {fileID: 2007437012}
   - component: {fileID: 2007437011}
+  - component: {fileID: 2007437015}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -710,3 +697,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007437015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007437010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b54d56e88971954aab6cd8e67b4fe22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 0.5
