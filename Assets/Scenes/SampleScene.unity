@@ -600,6 +600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c89ba0402609d54882bd514a6fd2186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LixoSpawnerController: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ff62ada99d3984c92363489ba44c2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LixoSpawnerController: {fileID: 0}
+  LixoSpawnerController: {fileID: 1472625489}
+  source: {fileID: 0}
 --- !u!1 &2096283271
 GameObject:
   m_ObjectHideFlags: 0

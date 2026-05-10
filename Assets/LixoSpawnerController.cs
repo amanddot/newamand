@@ -41,4 +41,11 @@ public class LixoSpawnerController : MonoBehaviour
     points += value;
     pointsText.text = "Points: " + points.ToString();
 }
+    
+    public void RemoveFromPoints(int value)
+{
+    points -= value;
+    if (points < 0) points = 0;
+    pointsText.text = "Points: " + points.ToString();
+}
 }
