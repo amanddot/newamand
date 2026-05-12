@@ -4,23 +4,15 @@ using UnityEngine;
 
 public class AddPoints : MonoBehaviour
 {
-    public LixoSpawnerController LixoSpawnerController;
     public AudioSource source;
+    public LixoSpawnerController lixoSpawnerController;
+
     private void OnCollisionEnter(Collision collision) {
-        
+        // Optional: Check if the entering object is the Player
         if (collision.gameObject.CompareTag("Lixo")) {
             Destroy(collision.gameObject);
             source.Play();
-            LixoSpawnerController.AddToPoints(1);
+            lixoSpawnerController.AddToPoints(1);
         }
-    }    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

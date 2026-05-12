@@ -2,20 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class destroylixo : MonoBehaviour
+public class DestroyLixo : MonoBehaviour
 {
-    public LixoSpawnerController LixoSpawnerController;
-    private void OnCollisionEnter(Collision collision)
+    // References
+    private void OnCollisionEnter(Collision collision) 
     {
-        if (collision.gameObject.CompareTag("Lixo"))
+        // Optional: Check if the entering object is the Player
+        if (collision.gameObject.CompareTag("Lixo")) 
         {
             Destroy(collision.gameObject);
-            LixoSpawnerController.RemoveFromPoints(1);
         }
-    }
-
-    void Start()
-    {
-
     }
 }
