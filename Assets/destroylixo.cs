@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class DestroyLixo : MonoBehaviour
 {
-    // References
+    public LixoSpawnerController lixoSpawnerController;
+
     private void OnCollisionEnter(Collision collision) 
     {
-        // Optional: Check if the entering object is the Player
+        // Opcional: Verifica se o objeto que colidiu tem a tag "Lixo"
         if (collision.gameObject.CompareTag("Lixo")) 
         {
             Destroy(collision.gameObject);
+
+            if (lixoSpawnerController.points > 0) 
+            {
+                lixoSpawnerController.AddToPoints(-1);
+            }
         }
     }
 }
